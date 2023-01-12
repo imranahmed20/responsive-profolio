@@ -22,17 +22,16 @@ body{
 }
 
 /* Header and nav style */
-header {
+.header {
     background: #FFF8F3;
     background-image: url('../images/header_bg.png'), url('../images/developer.png');
     /* background-blend-mode: multiply; */
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: bottom right, left;
 
 }
 
-nav {
+.nav {
     display: flex;
     justify-content: space-between;
     
@@ -210,6 +209,12 @@ main {
     background: #FFF8F3;
     padding: 130px 200px;
 }
+.contact-description{
+    color: #757575;
+    font-size: 18px;
+    margin-bottom: 30px;
+
+}
 .contact .section-title{
     text-align: left;
 }
@@ -228,20 +233,38 @@ main {
 
 /* responsive Portfolio */
 @media screen and (max-width:576px) {
-    .skill-container{
-        flex-direction: column;
+    .header{
+        background-image: none;
     }
-    .resume-contain, .about-info-container, .contact{
+    .banner, .nav, .skill-container, .resume-contain, .about-info-container, .contact{
         flex-direction: column;
+        gap: 20px;
         padding: 10px 20px;
 
+    }
+    .nav ul{
+        flex-direction: column;
+        gap: 20px;
+        text-align: start;
     }
     .section-description {
         padding: 10px 20px;
     }
+    .about, .contact{
+        padding: 20px;
+    }
     .contact input[type="text"], input[type="email"], textarea{
         padding: 5px 0 10px 5px;
     }
+    .banner {
+        margin: 0 20px;
+
+    }
+    .banner img{
+        width: 100%;
+    }
+   
+    
    
 }
 @media screen and (min-width:577px) and (max-width:992px) {
@@ -252,9 +275,9 @@ main {
         flex-direction: column;
     }
     .contact input[type="text"], input[type="email"], textarea{
-        padding: 5px 0 10px 5px;
+        padding: 0px 0 px 5px;
     }
-    .resume-contain, .skill-container{
+    .resume-contain {
         padding: 20px;
     }
     
