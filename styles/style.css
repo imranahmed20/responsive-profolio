@@ -245,7 +245,7 @@ main {
     .nav ul{
         flex-direction: column;
         gap: 20px;
-        text-align: start;
+        align-items: flex-start;
     }
     .section-description {
         padding: 10px 20px;
@@ -271,7 +271,7 @@ main {
     .section-description {
         padding: 20px;
     }
-    .contact{
+    .contact, .banner{
         flex-direction: column;
     }
     .contact input[type="text"], input[type="email"], textarea{
@@ -280,9 +280,14 @@ main {
     .resume-contain {
         padding: 20px;
     }
+    .nav ul{
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    .contact input[type="text"], input[type="email"], textarea{
+        padding: 5px 0 10px 5px;
+    }
     
 }
 
-.hide{
-    display: none;
-}
